@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+          <meta charset="utf-8">
+          <title>Google clone</title>
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+                    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+                    crossorigin="anonymous" referrerpolicy="no-referrer" />
+          <style>
+                    * {
+                              margin: 0;
+                              padding: 0;
+                              box-sizing: border-box;
+                    }
+
+                    .main {
+                              width: 100vw;
+                              height: 100vh;
+                              background-image: url(salaar.png);
+                              background-size: cover;
+                              display: flex;
+                              flex-direction: column;
+                              justify-content: center;
+                              align-items: center;
+                    }
+
+                    .container {
+                              width: 70%;
+                              height: 60%;
+                              background-color:transparent;
+                              display: flex;
+                              flex-direction: column;
+                              justify-content: center;
+                              align-items: center;
+                              gap:20px;
+                    }
+                    .inputs{
+                              background-color: white;
+                              border-radius: 25px;
+                              width: 80%;
+                              display: flex;
+                              align-items: center;
+                              justify-content: center;
+                    }
+                    .text{
+                           width:700px; 
+                           border: none;
+                           outline: none; 
+                           font-size: 20px;
+                           padding: 10px; 
+                    }
+                    i{
+                              font-size: 20px;
+                              margin: 5px;
+                    }
+                    .img{
+                              margin-bottom: 30px;
+                    }
+                    .fav{
+                              width: 120px;
+                              height: 120px;
+                              border-radius: 4px;
+                              display: flex;
+                              flex-direction: column;
+                              justify-content: center;
+                              align-items: center;
+                              cursor: pointer;
+                    }
+                    .fav:hover{
+                              background-color: rgba(255, 255, 255, 0.233);
+                              .dots{
+                                  opacity: 1;      
+                              }
+                    }
+                    .cicrle{
+                              width: 50%;
+                              height: 50%;
+                              border-radius: 50%;
+                              background-color:white;
+                              display: flex;
+                              flex-direction: column;
+                              justify-content: space-around;
+                              align-items: center;
+                    }
+                    .favcon{
+                              width: 100%;
+                              border-radius: 50%;
+                              background-size: cover;
+                    }
+                    p{
+                              color: white;
+                              font-size: 15px;
+                              margin: 15px;
+                    }
+                    .favlist{
+                              display: flex;
+                              justify-content: center;
+                              align-items: center;
+                              gap: 30px; 
+                              margin:  20px;
+                    }
+                    .dots{
+                              font-size: 20px; 
+                              position: relative; 
+                              left: 50px;
+                              top: 11px;
+                              color:rgba(255, 255, 255, 0.687);
+                              opacity: 0;
+                              transition: 0.5s all ease;
+                    }
+                    .topr{
+                              width: 200px;
+                              height: 30px;
+                              background-color:transparent;
+                              display: flex;
+                              justify-content: center;
+                              align-items: center;
+                              position: fixed;
+                              top: 10px;
+                              right: 10px;
+                              color: white;
+                    }
+                    .tn{
+                              margin-right: 13px;
+                    }
+                    .tdots{
+                              margin:1px;
+                    }
+                    .gif{
+                              width: 30px;
+                              height: 30px;
+                              border-radius: 50%;
+                              margin-left: 15px;
+                    }
+          </style>
+</head>
+
+<body>
+          <div class="main">
+                    <div class="container">
+                              <img src="google.png" class="img" width="40%">
+                              <div class="inputs">
+                                        <i class="fa-solid fa-magnifying-glass"></i>
+                                        <form action="https://google.com/search">
+                                                  <input type="text" class="text" id="" placeholder="Search Google or type a URL" name="q">
+                                        </form>
+                                        <i class="fa-solid fa-microphone-lines"></i>
+                                        <i class="fa-solid fa-camera"></i>
+                              </div> 
+                              <div class="favlist">
+                                        <div class="fav">
+                                                  <i class="fa-solid fa-ellipsis-vertical dots"></i>
+                                                  <div class="cicrle">
+                                                            <img src="insta.png" class="favcon" alt="">
+                                                  </div>
+                                                  <p>Instagram</p>
+                                        </div>        
+                                        <div class="fav">
+                                                  <i class="fa-solid fa-ellipsis-vertical dots"></i>
+                                                  <div class="cicrle">
+                                                            <img src="whts.png" class="favcon" alt="">
+                                                  </div>
+                                                  <p>Whatsapp</p>
+                                        </div>        
+                                        <div class="fav">
+                                                  <i class="fa-solid fa-ellipsis-vertical dots"></i>
+                                                  <div class="cicrle">
+                                                            <img src="link.png" class="favcon" alt="">
+                                                  </div>
+                                                  <p>Linkedin</p>
+                                        </div>        
+                                        <div class="fav">
+                                                  <i class="fa-solid fa-ellipsis-vertical dots"></i>
+                                                  <div class="cicrle">
+                                                            <img src="ibom.png" class="favcon" alt="">
+                                                  </div>
+                                                  <p>Ibomma</p>
+                                        </div>        
+                                        <div class="fav">
+                                                  <i class="fa-solid fa-ellipsis-vertical dots"></i>
+                                                  <div class="cicrle">
+                                                            <img src="net.png" class="favcon" alt="">
+                                                  </div>
+                                                  <p>Netflix</p>
+                                        </div>        
+                                        
+                              </div>
+                    </div>
+                    <div class="topr">
+                              <p class="tn">Gmail</p>
+                              <p class="tn">Images</p>
+                              <i class="fa-solid fa-ellipsis-vertical tdots"></i>
+                              <i class="fa-solid fa-ellipsis-vertical tdots"></i>
+                              <i class="fa-solid fa-ellipsis-vertical tdots"></i>
+                              <img src="salaar.gif" class="gif" alt="">
+                    </div>
+          </div>
+</body>
+</html>
